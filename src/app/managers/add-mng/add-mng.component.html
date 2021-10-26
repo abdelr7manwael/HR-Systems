@@ -1,0 +1,23 @@
+<h1 class="display-3 text-info text-center mb-5 font-weight-bold">Welcome to Add manager Page</h1>
+<h3 class="display-5 text-info text-center mb-5">*note: The button will appear when you write valid data*</h3>
+<div class="container col-lg-6">
+    <div class="card">
+        <div class="card-body bg-dark">
+            <div class="form-group">
+                <label for="">Name</label>
+                <input required type="text" placeholder="Your Name" #mngName='ngModel' [(ngModel)]="object.name" class="form-control">
+                
+            </div>
+            <div class="form-group">
+                <label for="">department</label>
+                <input required type="text" placeholder="Your department" #mngdepartment='ngModel' [(ngModel)]="object.department" class="form-control">
+                
+            </div>
+            <div *ngIf='mngName.valid && mngdepartment.valid'>
+                <button (click)='save()' class="btn btn-info w-25 btn-block rounded-25 font-weight-bold m-auto">Send Data</button>
+            </div>
+            
+        </div>
+    </div>
+
+</div>

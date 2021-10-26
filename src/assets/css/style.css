@@ -1,0 +1,103 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+    body{
+        padding-top: 70px;
+    }
+    h1{
+        letter-spacing: 10px; 
+    }
+    .navbar {
+        background: #fff;
+        box-shadow: 0 4px 4px -4px rgb(0 0 0 / 70%);
+    }
+    
+    header nav .navbar-brand {
+        letter-spacing: 8px;
+    }
+    
+    header nav .nav-link:hover {
+    
+        color:silver  !important;
+    }
+    #OurStory{
+        width: 100%;
+        height: 600px;
+        background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url(../img/story.jpg);
+        background-size: 100% 100%;
+        position: relative;
+    }
+    #OurStory .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #OurStory .content div{
+        width: 90%;
+        margin: auto;
+    }
+    #OurStory .content div p{
+        color: #fff;
+        line-height: 1.6;
+        text-align: center;
+    }
+    #Gallery div ul {
+        width: 50%;
+        margin: auto;
+    }
+    #Gallery div ul li .active {
+        background-color: black;
+        color: white;
+        border: solid black .5px;
+    }
+    
+    #Gallery div ul li {
+        width: 30%;
+        margin: auto;
+        background-color: white;
+        border: solid white .5px;
+    }
+    #Gallery div ul li a {
+        text-decoration: none;
+        text-align: center;
+        color: black;
+    }
+    #Gallery div ul li :hover {
+      
+        border: solid black .5px;
+    }
+    #Gallery div ul li :focus {
+        background-color: black;
+        color: white;
+    }
+    #Gallery div .tab-content img {
+        border: solid black .25px;
+    }
+    #Footer {
+        background: black;
+    }
+    #Footer h2 {
+        color: white;
+        margin: 30px 0px;
+    }
+    
+    #Footer p {
+        color: white;
+    }
+    
+    #Footer a:hover {
+        color: darkgray !important;
+    }
+    #Footer hr {
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        width: 95%;
+        border-top: 1px solid rgb(255, 255, 255);
+    }    
+
+

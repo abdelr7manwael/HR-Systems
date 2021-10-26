@@ -1,0 +1,23 @@
+<h1 class="display-3 text-info text-center mb-5 font-weight-bold">Update Emp Page</h1>
+<h3 class="display-5 text-info text-center mb-5">*note: The button will appear when you write valid data*</h3>
+<div class="container col-lg-6">
+    <div class="card">
+        <div class="card-body bg-dark">
+            <div class="form-group">
+                <label for="">Name</label>
+                <input required type="text" placeholder="Your Name" #empName='ngModel' [(ngModel)]="object.name" class="form-control">
+                
+            </div>
+            <div class="form-group">
+                <label for="">position</label>
+                <input required type="text" placeholder="Your Position" #empPosition='ngModel' [(ngModel)]="object.position" class="form-control">
+                
+            </div>
+            <div *ngIf='empName.valid && empPosition.valid'>
+                <button (click)='update()' class="btn btn-info w-25 btn-block rounded-25 font-weight-bold m-auto">Send Data</button>
+            </div>
+            
+        </div>
+    </div>
+
+</div>

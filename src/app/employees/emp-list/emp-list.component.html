@@ -1,0 +1,29 @@
+<h1 class="display-3 text-info text-center mb-5">Welcome To Employees List Page </h1>
+<div class="container col-lg-6">
+    <div class="card">
+        <div class="card-body bg-dark">
+         <table class="table table-dark">
+             <tr>
+                 <th>ID</th>
+                 <th>NAME</th>
+                 <th>POSITION</th>
+                 <th>Delete</th>
+                 <th>Edit</th>
+
+             </tr>
+             <tr *ngFor='let Employee of allData'>
+                <th> {{Employee.id}}</th>
+                <th> {{Employee.name}}</th>
+                <th>{{Employee.position}}</th>
+                <th> <button (click)='remove(Employee.id)' class="btn btn-danger">Delete</button></th>
+                <th> <a class="btn btn-info" routerLink="/update-emp/{{Employee.id}}">Edit</a></th>
+
+            </tr>
+            
+
+         </table>
+        </div>
+    </div>
+
+</div>
+
